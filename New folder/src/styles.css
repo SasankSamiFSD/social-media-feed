@@ -1,0 +1,107 @@
+/* body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; 
+}
+
+.App {
+  text-align: center;
+  padding: 30px; 
+  background-color: #ffffff; 
+}
+
+.news-feed {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  justify-items: center; 
+}
+
+.article-card {
+  background: linear-gradient(135deg, #ffefd5, #ffc1e3); 
+  padding: 25px;
+  margin: 0; 
+  border-radius: 12px; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  width: 90%; 
+  max-width: 400px; 
+}
+
+.article-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.spinner {
+  margin: 30px auto;
+  font-size: 20px; 
+  color: #666; 
+  text-align: center;
+  font-weight: 500; 
+} */
+
+body {
+  font-family: "Lora", serif; /* Use Lora, a serif font for a classic look */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa; /* Softer background color */
+}
+
+.App {
+  text-align: center; /* Center text within the container */
+  padding: 60px 30px; /* Spacious padding for a roomy feel */
+  background-color: #ffffff;
+  max-width: 100%; /* Allow full width */
+  margin: auto;
+  border: 2px solid #d1d9e6; /* Softer border for subtle effect */
+  border-radius: 12px; /* Rounded corners for modern look */
+  font-family: "Poppins", sans-serif; /* Poppins for clean sans-serif style */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+/* News feed styles for single-column layout */
+.news-feed {
+  display: flex; /* Use flexbox for single column */
+  flex-direction: column; /* Arrange items in a column */
+  gap: 30px; /* Larger gap between articles */
+  width: 100%; /* Full width for the grid container */
+  max-width: 1100px; /* Set a maximum width to prevent it from stretching too far */
+  margin: 0 auto; /* Center the container */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: flex-start; /* Align items at the top */
+}
+
+/* Article card styles */
+.article-card {
+  background: #ffffff; /* White background for clean look */
+  padding: 25px;
+  border-top: 5px solid #ff6f61; /* Accent color border */
+  border-radius: 8px; /* Rounded corners for modern feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for subtle elevation */
+  width: 90%; /* Set width to 90% for a centered look */
+  max-width: 800px; /* Maximum width for large screens */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Subtle transformation */
+  font-family: "Roboto", sans-serif; /* Use Roboto for clean, modern font */
+  margin: 0 auto; /* Center each card */
+}
+
+.article-card:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Spinner styles */
+.spinner {
+  margin: 50px auto; /* Center spinner with ample space */
+  font-size: 18px; /* Larger font size for readability */
+  color: #ff6f61; /* Match accent color */
+  text-align: center;
+  font-weight: 700; /* Bold for emphasis */
+  letter-spacing: 1.5px; /* Slight letter spacing */
+  font-family: "Lora", serif; /* Spinner font matches body font */
+}
+
